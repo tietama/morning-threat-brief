@@ -31,3 +31,12 @@ Chose Ubuntu instead of Kali because the project is primarily a development and 
 
 - Define threat intelligence sources
 - Build first RSS feed collector
+
+## 2026-06-23
+
+Updated RSS collector:
+- Removed ENISA feed due to parsing issues
+- Added 30-day freshness filtering
+- Added link-based deduplication
+- Fixed stable output path to project_root/data/articles.json
+- Collector now returns 31 recent articles
