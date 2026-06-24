@@ -40,3 +40,11 @@ Updated RSS collector:
 - Added link-based deduplication
 - Fixed stable output path to project_root/data/articles.json
 - Collector now returns 31 recent articles
+
+## 2026-06-24
+
+Updated RSS collector to v0.2.3:
+- Added newest-first sorting using parsed publication dates
+- Normalized published dates to ISO 8601
+- Added per-feed collection statistics
+- Moded default RSS feeds to config/feeds.txt with fallback behavior

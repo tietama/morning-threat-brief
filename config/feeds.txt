@@ -1,0 +1,6 @@
+# Security-focused RSS feeds
+# One URL per line. Lines starting with # and blank lines are ignored.
+
+https://www.kyberturvallisuuskeskus.fi/feed/rss/fi
+https://www.bleepingcomputer.com/feed/
+https://www.securityweek.com/feed/
