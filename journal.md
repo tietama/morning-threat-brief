@@ -48,3 +48,17 @@ Updated RSS collector to v0.2.3:
 - Normalized published dates to ISO 8601
 - Added per-feed collection statistics
 - Moded default RSS feeds to config/feeds.txt with fallback behavior
+
+## 2026-06-24
+
+Updated report generator to v0.3.2
+
+Changes:
+- Added total article count to report metadata
+- Added total source count to report metadata
+- Added source summary section with per-source article counts
+- Added Top Recent Articles section showing the five newest articles
+- Improved report readability and executive-level overview
+
+Result:
+- Repots now provide an immediate summary of collected intelligence before detailed source-by-source review

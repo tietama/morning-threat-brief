@@ -90,6 +90,74 @@ def format_article(article: dict) -> str:
     return markdown.strip()
 
 
+def calculate_source_counts(grouped: dict[str, list[dict]]) -> list[tuple[str, int]]:
+    """
+    Calculate article counts per source and sort by count descending.
+
+    Args:
+        grouped: Dictionary with source names as keys and article lists as values
+
+    Returns:
+        List of (source_name, count) tuples sorted by count descending
+    """
+    source_counts = [(source, len(articles)) for source, articles in grouped.items()]
+    return sorted(source_counts, key=lambda x: x[1], reverse=True)
+
+
+def format_source_summary(source_counts: list[tuple[str, int]]) -> str:
+    """
+    Format source summary section for the report.
+
+    Args:
+        source_counts: List of (source_name, count) tuples
+
+    Returns:
+        Formatted Markdown string for the sources section
+    """
+    lines = ["## Sources", ""]
+    for source, count in source_counts:
+        lines.append(f"- **{source}:** {count} article{'s' if count != 1 else ''}")
+    return "\n".join(lines)
+
+
+def format_top_articles(articles: list[dict], limit: int = 5) -> str:
+    """
+    Format top recent articles section for the report.
+
+    Assumes articles are already sorted newest-first.
+
+    Args:
+        articles: List of article dictionaries
+        limit: Maximum number of articles to include (default: 5)
+
+    Returns:
+        Formatted Markdown string for the top articles section
+    """
+    top_articles = articles[:limit]
+    lines = ["## Top Recent Articles", ""]
+
+    for i, article in enumerate(top_articles, start=1):
+        title = article.get("title", "Untitled")
+        link = article.get("link", "")
+        source = article.get("source", "Unknown Source")
+        published = article.get("published", "Date unknown")
+
+        # Create linked title or plain bold title
+        if link:
+            title_text = f"**[{title}]({link})**"
+        else:
+            title_text = f"**{title}**"
+
+        # Format published date to be more readable (extract just the date part)
+        date_part = published.split("T")[0] if "T" in published else published
+
+        lines.append(f"{i}. {title_text} — {source}, {date_part}")
+
+    return "\n".join(lines)
+
+
+
+
 def generate_report(
     articles: list[dict],
     output_path: Path = DEFAULT_OUTPUT,
@@ -97,7 +165,8 @@ def generate_report(
     """
     Generate Markdown threat brief from articles.
 
-    Includes title, generation date, article count, and articles grouped by source.
+    Includes title, generation date, article count, source count, source summary,
+    top recent articles, and articles grouped by source.
 
     Args:
         articles: List of article dictionaries
@@ -112,18 +181,31 @@ def generate_report(
         "# Morning Threat Brief",
         "",
         f"**Generated:** {now}",
-        f"**Articles Processed:** {len(articles)}",
-        "",
+        f"**Total Articles:** {len(articles)}",
     ]
 
     # Handle empty article list
     if not articles:
+        report_lines.append("")
         report_lines.append("No articles available for this report.")
     else:
         # Group articles by source for organized report
         grouped = group_articles_by_source(articles)
 
-        # Add section for each source
+        # Add total sources to header
+        report_lines.append(f"**Total Sources:** {len(grouped)}")
+        report_lines.append("")
+
+        # Add source summary section
+        source_counts = calculate_source_counts(grouped)
+        report_lines.append(format_source_summary(source_counts))
+        report_lines.append("")
+
+        # Add top recent articles section
+        report_lines.append(format_top_articles(articles))
+        report_lines.append("")
+
+        # Add section for each source (sorted alphabetically)
         for source in sorted(grouped.keys()):
             source_articles = grouped[source]
             report_lines.append(f"## {source}")
@@ -145,6 +227,8 @@ def generate_report(
     except Exception as e:
         print(f"Error: Failed to write report to {output_path}: {e}", file=sys.stderr)
         sys.exit(1)
+
+
 
 
 def main() -> None:
