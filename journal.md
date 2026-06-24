@@ -62,3 +62,24 @@ Changes:
 
 Result:
 - Repots now provide an immediate summary of collected intelligence before detailed source-by-source review
+
+## 2026-06-24
+
+Updated report generator to v0.3.3
+
+Changes:
+
+- Added report metadata including total article count and total source count
+- Added source summary section with per-source article counts
+- Added Top Recent Articles section highlighting the five newest articles
+- Added summary cleanup and formatting
+- Removed HTML tags from RSS summaries
+- Decoded HTML entities
+- Normalized whitespace
+- Added summary truncation for improved readability
+
+Result:
+
+- Generated reports now provide both an executive overview and detailed source-by-source coverage
+- Report readability improved significantly through summary cleanup and formatting
+- Markdown output is now suitable for portfolio demonstration and future pipeline automation

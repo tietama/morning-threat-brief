@@ -1,6 +1,8 @@
 import json
 import sys
+import re
 from datetime import datetime
+from html import unescape
 from pathlib import Path
 from collections import defaultdict
 
@@ -55,11 +57,62 @@ def group_articles_by_source(articles: list[dict]) -> dict[str, list[dict]]:
     return dict(grouped)
 
 
+def clean_summary(summary: str, max_length: int = 300) -> str:
+    """
+    Clean and format summary text for readability.
+
+    - Removes HTML tags
+    - Decodes HTML entities
+    - Collapses whitespace
+    - Truncates to max_length with ellipsis
+    - Avoids cutting words in the middle when practical
+
+    Args:
+        summary: Raw summary text from RSS feed
+        max_length: Maximum length of cleaned summary (default: 300)
+
+    Returns:
+        Cleaned summary string
+    """
+    if not summary:
+        return "No summary available"
+
+    # Remove HTML tags
+    clean_text = re.sub(r"<[^>]+>", "", summary)
+
+    # Decode HTML entities (e.g., &quot; -> ")
+    clean_text = unescape(clean_text)
+
+    # Collapse multiple whitespace into single spaces
+    clean_text = re.sub(r"\s+", " ", clean_text)
+
+    # Strip leading and trailing whitespace
+    clean_text = clean_text.strip()
+
+    # Truncate if necessary
+    if len(clean_text) > max_length:
+        # Try to truncate at word boundary
+        truncated = clean_text[:max_length]
+
+        # Find last space within max_length to avoid cutting words
+        last_space = truncated.rfind(" ")
+        if last_space > 0 and last_space > max_length * 0.75:
+            # Use last space if it's reasonable (not too far back)
+            clean_text = clean_text[:last_space] + "..."
+        else:
+            # Otherwise just truncate and add ellipsis
+            clean_text = truncated + "..."
+
+    return clean_text
+
+
+
 def format_article(article: dict) -> str:
     """
     Format a single article as Markdown.
 
     Handles missing fields gracefully with fallback text.
+    Summaries are cleaned of HTML tags and truncated for readability.
 
     Args:
         article: Dictionary containing article data
@@ -71,7 +124,10 @@ def format_article(article: dict) -> str:
     link = article.get("link", "")
     source = article.get("source", "Unknown Source")
     published = article.get("published", "Date unknown")
-    summary = article.get("summary", "No summary available")
+    summary = article.get("summary", "")
+
+    # Clean summary for display
+    cleaned_summary = clean_summary(summary)
 
     # Create linked title if link available, plain title otherwise
     if link:
@@ -85,9 +141,10 @@ def format_article(article: dict) -> str:
 
 - **Source:** {source}
 - **Published:** {published}
-- **Summary:** {summary}
+- **Summary:** {cleaned_summary}
 """
     return markdown.strip()
+
 
 
 def calculate_source_counts(grouped: dict[str, list[dict]]) -> list[tuple[str, int]]:
