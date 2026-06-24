@@ -83,3 +83,29 @@ Result:
 - Generated reports now provide both an executive overview and detailed source-by-source coverage
 - Report readability improved significantly through summary cleanup and formatting
 - Markdown output is now suitable for portfolio demonstration and future pipeline automation
+
+## 2026-06-24
+
+Updated project to v0.4
+
+Changes:
+
+- Added pipeline_runner.py
+- Added one-command execution of the complete workflow
+- Pipeline now:
+	- Loads RSS feeds from configuration
+	- Collects and filters recent articles
+	- Deduplicates articles
+	- Sorts articles newest-first
+	- Saves articles to data/articles.json
+	- Generates outputs/threat_brief.md
+- Added execution timing
+- Added pipeline progress messages
+- Added centralized pipeline error handling
+
+Result:
+
+- Morning Threat Brief can now be executed with a single command
+- Collection and report generation are now automated
+- Project now functions as a complete end-to-end threat intelligence pipeline
+- Foundation prepared for future LLM summarization features
