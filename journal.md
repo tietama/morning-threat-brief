@@ -129,3 +129,23 @@ Result:
 - Morning Threat Brief now performs deterministic threat classification in addition to collecting news
 - Reports provide an executive overview of the current threat landscape by category
 - Foundation prepared for future relevance scoring and CISA KEV integration
+
+## 2026-06-25
+
+Updated project to v0.6
+
+Changes:
+
+- Added deterministic relevance scoring
+- Created explainable scoring using threat categories and keyword matches
+- Added human-readable relevance reasons for every scored article
+- Integrated relevance scoring into the pipeline
+- Store relevance scores and reasons in data/articles.json
+- Added relevance score and scoring reasons to individual article entries in the report
+- Added Highest Relevance Articles summary section highlighting the five highest-scoring articles
+
+Result:
+
+- Morning Threat Brief now prioritizes collected intelligence using deterministic and explainable relevance scoring
+- Reports now highlight the most important articles alongside the latest articles
+- Foundation prepared for future CISA KEV enrichment and AI-assisted summarization

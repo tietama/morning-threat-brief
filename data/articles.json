@@ -1,5 +1,34 @@
 [
   {
+    "title": "NIST Opens Updated IoT Security Guidance to Public Review",
+    "link": "https://www.securityweek.com/nist-opens-updated-iot-security-guidance-to-public-review/",
+    "published": "2026-06-25T08:29:26+00:00",
+    "source": "SecurityWeek",
+    "summary": "<p>The guidance aims to establish product cybersecurity requirements for IoT devices integrated into federal agencies’ networks.</p>\n<p>The post <a href=\"https://www.securityweek.com/nist-opens-updated-iot-security-guidance-to-public-review/\">NIST Opens Updated IoT Security Guidance to Public Review</a> appeared first on <a href=\"https://www.securityweek.com\">SecurityWeek</a>.</p>",
+    "feed_url": "https://www.securityweek.com/feed/",
+    "categories": [
+      "Uncategorized"
+    ],
+    "relevance_score": 0,
+    "relevance_reasons": []
+  },
+  {
+    "title": "Chrome 149 Update Resolves 18 Severe Vulnerabilities",
+    "link": "https://www.securityweek.com/chrome-149-update-resolves-18-severe-vulnerabilities/",
+    "published": "2026-06-25T07:56:03+00:00",
+    "source": "SecurityWeek",
+    "summary": "<p>More than half of the bugs are use-after-free defects, which can potentially lead to remote code execution.</p>\n<p>The post <a href=\"https://www.securityweek.com/chrome-149-update-resolves-18-severe-vulnerabilities/\">Chrome 149 Update Resolves 18 Severe Vulnerabilities</a> appeared first on <a href=\"https://www.securityweek.com\">SecurityWeek</a>.</p>",
+    "feed_url": "https://www.securityweek.com/feed/",
+    "categories": [
+      "Vulnerability"
+    ],
+    "relevance_score": 6,
+    "relevance_reasons": [
+      "Vulnerability category",
+      "Remote code execution mentioned"
+    ]
+  },
+  {
     "title": "Cisco SD-WAN Zero-Day Exploited Months Before Patching",
     "link": "https://www.securityweek.com/cisco-sd-wan-zero-day-exploited-months-before-patching/",
     "published": "2026-06-25T06:08:43+00:00",
@@ -8,6 +37,13 @@
     "feed_url": "https://www.securityweek.com/feed/",
     "categories": [
       "Vulnerability"
+    ],
+    "relevance_score": 10,
+    "relevance_reasons": [
+      "Vulnerability category",
+      "Zero-day mentioned",
+      "CVE mentioned",
+      "Exploit mentioned"
     ]
   },
   {
@@ -19,7 +55,9 @@
     "feed_url": "https://www.bleepingcomputer.com/feed/",
     "categories": [
       "Uncategorized"
-    ]
+    ],
+    "relevance_score": 0,
+    "relevance_reasons": []
   },
   {
     "title": "DraftKings hacker 'Snoopy' sentenced to 18 months in prison",
@@ -30,7 +68,9 @@
     "feed_url": "https://www.bleepingcomputer.com/feed/",
     "categories": [
       "Uncategorized"
-    ]
+    ],
+    "relevance_score": 0,
+    "relevance_reasons": []
   },
   {
     "title": "Mandiant reveals how Cisco SD-WAN zero-day attacks gained root access",
@@ -41,6 +81,13 @@
     "feed_url": "https://www.bleepingcomputer.com/feed/",
     "categories": [
       "Vulnerability"
+    ],
+    "relevance_score": 10,
+    "relevance_reasons": [
+      "Vulnerability category",
+      "Zero-day mentioned",
+      "CVE mentioned",
+      "Exploit mentioned"
     ]
   },
   {
@@ -53,6 +100,12 @@
     "categories": [
       "Ransomware",
       "Malware"
+    ],
+    "relevance_score": 9,
+    "relevance_reasons": [
+      "Ransomware category",
+      "Malware category",
+      "Ransomware mentioned"
     ]
   },
   {
@@ -64,6 +117,10 @@
     "feed_url": "https://www.securityweek.com/feed/",
     "categories": [
       "Vulnerability"
+    ],
+    "relevance_score": 3,
+    "relevance_reasons": [
+      "Vulnerability category"
     ]
   },
   {
@@ -76,6 +133,11 @@
     "categories": [
       "Vulnerability",
       "Malware"
+    ],
+    "relevance_score": 6,
+    "relevance_reasons": [
+      "Vulnerability category",
+      "Malware category"
     ]
   },
   {
@@ -87,6 +149,11 @@
     "feed_url": "https://www.bleepingcomputer.com/feed/",
     "categories": [
       "Vulnerability"
+    ],
+    "relevance_score": 5,
+    "relevance_reasons": [
+      "Vulnerability category",
+      "Exploit mentioned"
     ]
   },
   {
@@ -99,6 +166,12 @@
     "categories": [
       "Ransomware",
       "Malware"
+    ],
+    "relevance_score": 9,
+    "relevance_reasons": [
+      "Ransomware category",
+      "Malware category",
+      "Ransomware mentioned"
     ]
   },
   {
@@ -110,7 +183,9 @@
     "feed_url": "https://www.securityweek.com/feed/",
     "categories": [
       "Uncategorized"
-    ]
+    ],
+    "relevance_score": 0,
+    "relevance_reasons": []
   },
   {
     "title": "Securing the service desk: Why social engineering attacks keep succeeding",
@@ -121,7 +196,9 @@
     "feed_url": "https://www.bleepingcomputer.com/feed/",
     "categories": [
       "Uncategorized"
-    ]
+    ],
+    "relevance_score": 0,
+    "relevance_reasons": []
   },
   {
     "title": "macOS Weaknesses Chained to Silently Disable Endpoint Security Agents",
@@ -132,6 +209,11 @@
     "feed_url": "https://www.securityweek.com/feed/",
     "categories": [
       "Vulnerability"
+    ],
+    "relevance_score": 5,
+    "relevance_reasons": [
+      "Vulnerability category",
+      "Exploit mentioned"
     ]
   },
   {
@@ -143,7 +225,9 @@
     "feed_url": "https://www.securityweek.com/feed/",
     "categories": [
       "Uncategorized"
-    ]
+    ],
+    "relevance_score": 0,
+    "relevance_reasons": []
   },
   {
     "title": "Critical Ubiquiti Vulnerabilities in Attackers’ Crosshairs",
@@ -154,6 +238,10 @@
     "feed_url": "https://www.securityweek.com/feed/",
     "categories": [
       "Uncategorized"
+    ],
+    "relevance_score": 2,
+    "relevance_reasons": [
+      "Critical mentioned"
     ]
   },
   {
@@ -165,29 +253,9 @@
     "feed_url": "https://www.securityweek.com/feed/",
     "categories": [
       "Uncategorized"
-    ]
-  },
-  {
-    "title": "New ‘Mistic’ RAT Opens Door to Several Ransomware Families",
-    "link": "https://www.securityweek.com/new-mistic-rat-opens-door-to-several-ransomware-families/",
-    "published": "2026-06-24T11:42:38+00:00",
-    "source": "SecurityWeek",
-    "summary": "<p>Mistic is used by Woodgnat, an initial access broker working with Qilin, Interlock, Rhysida, Akira, 8Base, and Black Basta.</p>\n<p>The post <a href=\"https://www.securityweek.com/new-mistic-rat-opens-door-to-several-ransomware-families/\">New &#8216;Mistic&#8217; RAT Opens Door to Several Ransomware Families</a> appeared first on <a href=\"https://www.securityweek.com\">SecurityWeek</a>.</p>",
-    "feed_url": "https://www.securityweek.com/feed/",
-    "categories": [
-      "Ransomware"
-    ]
-  },
-  {
-    "title": "Exploitable CI/CD Vulnerabilities Expose Millions of Repositories to Hijacking",
-    "link": "https://www.securityweek.com/exploitable-ci-cd-vulnerabilities-expose-millions-of-repositories-to-hijacking/",
-    "published": "2026-06-24T10:55:05+00:00",
-    "source": "SecurityWeek",
-    "summary": "<p>The security defects allow unauthenticated users to take control of the open source software supply chain.</p>\n<p>The post <a href=\"https://www.securityweek.com/exploitable-ci-cd-vulnerabilities-expose-millions-of-repositories-to-hijacking/\">Exploitable CI/CD Vulnerabilities Expose Millions of Repositories to Hijacking</a> appeared first on <a href=\"https://www.securityweek.com\">SecurityWeek</a>.</p>",
-    "feed_url": "https://www.securityweek.com/feed/",
-    "categories": [
-      "Vulnerability"
-    ]
+    ],
+    "relevance_score": 0,
+    "relevance_reasons": []
   },
   {
     "title": "Stealthy Mistic backdoor linked to ransomware access broker KongTuke",
@@ -199,6 +267,12 @@
     "categories": [
       "Ransomware",
       "Malware"
+    ],
+    "relevance_score": 9,
+    "relevance_reasons": [
+      "Ransomware category",
+      "Malware category",
+      "Ransomware mentioned"
     ]
   },
   {
@@ -210,6 +284,12 @@
     "feed_url": "https://www.bleepingcomputer.com/feed/",
     "categories": [
       "Vulnerability"
+    ],
+    "relevance_score": 7,
+    "relevance_reasons": [
+      "Vulnerability category",
+      "CVE mentioned",
+      "Exploit mentioned"
     ]
   },
   {
@@ -221,6 +301,10 @@
     "feed_url": "https://www.bleepingcomputer.com/feed/",
     "categories": [
       "Data Breach"
+    ],
+    "relevance_score": 3,
+    "relevance_reasons": [
+      "Data Breach category"
     ]
   },
   {
@@ -232,7 +316,9 @@
     "feed_url": "https://www.bleepingcomputer.com/feed/",
     "categories": [
       "Uncategorized"
-    ]
+    ],
+    "relevance_score": 0,
+    "relevance_reasons": []
   },
   {
     "title": "Healthtech firm Xolis suffers data breach impacting 1.4 million people",
@@ -244,6 +330,11 @@
     "categories": [
       "Phishing",
       "Data Breach"
+    ],
+    "relevance_score": 5,
+    "relevance_reasons": [
+      "Phishing category",
+      "Data Breach category"
     ]
   },
   {
@@ -255,6 +346,10 @@
     "feed_url": "https://www.bleepingcomputer.com/feed/",
     "categories": [
       "Malware"
+    ],
+    "relevance_score": 3,
+    "relevance_reasons": [
+      "Malware category"
     ]
   },
   {
@@ -266,7 +361,9 @@
     "feed_url": "https://www.bleepingcomputer.com/feed/",
     "categories": [
       "Uncategorized"
-    ]
+    ],
+    "relevance_score": 0,
+    "relevance_reasons": []
   },
   {
     "title": "The Exploit Doesn't Exist. You Can Still Prove It Works Against You",
@@ -277,6 +374,11 @@
     "feed_url": "https://www.bleepingcomputer.com/feed/",
     "categories": [
       "Vulnerability"
+    ],
+    "relevance_score": 5,
+    "relevance_reasons": [
+      "Vulnerability category",
+      "Exploit mentioned"
     ]
   },
   {
@@ -288,7 +390,9 @@
     "feed_url": "https://www.kyberturvallisuuskeskus.fi/feed/rss/fi",
     "categories": [
       "Uncategorized"
-    ]
+    ],
+    "relevance_score": 0,
+    "relevance_reasons": []
   },
   {
     "title": "Kyberturvallisuuskeskuksen viikkokatsaus - 24/2026",
@@ -299,7 +403,9 @@
     "feed_url": "https://www.kyberturvallisuuskeskus.fi/feed/rss/fi",
     "categories": [
       "Uncategorized"
-    ]
+    ],
+    "relevance_score": 0,
+    "relevance_reasons": []
   },
   {
     "title": "Toukokuun Kybersää 2026",
@@ -310,7 +416,9 @@
     "feed_url": "https://www.kyberturvallisuuskeskus.fi/feed/rss/fi",
     "categories": [
       "Uncategorized"
-    ]
+    ],
+    "relevance_score": 0,
+    "relevance_reasons": []
   },
   {
     "title": "Check Point VPN -tuotteissa aktiivisesti hyväksikäytetty haavoittuvuus",
@@ -321,6 +429,11 @@
     "feed_url": "https://www.kyberturvallisuuskeskus.fi/feed/rss/fi",
     "categories": [
       "Vulnerability"
+    ],
+    "relevance_score": 5,
+    "relevance_reasons": [
+      "Vulnerability category",
+      "CVE mentioned"
     ]
   },
   {
@@ -332,7 +445,9 @@
     "feed_url": "https://www.kyberturvallisuuskeskus.fi/feed/rss/fi",
     "categories": [
       "Uncategorized"
-    ]
+    ],
+    "relevance_score": 0,
+    "relevance_reasons": []
   },
   {
     "title": "Kyberturvallisuuskeskuksen viikkokatsaus - 22/2026",
@@ -343,6 +458,8 @@
     "feed_url": "https://www.kyberturvallisuuskeskus.fi/feed/rss/fi",
     "categories": [
       "Uncategorized"
-    ]
+    ],
+    "relevance_score": 0,
+    "relevance_reasons": []
   }
 ]

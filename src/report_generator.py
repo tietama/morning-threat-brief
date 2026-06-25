@@ -127,6 +127,9 @@ def format_article(article: dict) -> str:
     summary = article.get("summary", "")
     categories = article.get("categories", ["Uncategorized"])
     category_text = ", ".join(categories)
+    relevance_score = article.get("relevance_score", 0)
+    relevance_reasons = article.get("relevance_reasons", [])
+    relevance_reason_text = "; ".join(relevance_reasons) if relevance_reasons else "None"
 
     # Clean summary for display
     cleaned_summary = clean_summary(summary)
@@ -144,6 +147,8 @@ def format_article(article: dict) -> str:
 - **Source:** {source}
 - **Published:** {published}
 - **Categories:** {category_text}
+- **Relevance Score:** {relevance_score}/10
+- **Relevance Reasons:** {relevance_reason_text}
 - **Summary:** {cleaned_summary}
 """
     return markdown.strip()
@@ -215,6 +220,54 @@ def format_category_summary(category_counts: list[tuple[str, int]]) -> str:
     lines = ["## Threat Categories", ""]
     for category, count in category_counts:
         lines.append(f"- **{category}:** {count} article{'s' if count != 1 else ''}")
+    return "\n".join(lines)
+
+
+def calculate_top_articles(articles: list[dict]) -> list[dict]:
+    """
+    Return the five highest-scoring articles by relevance score.
+
+    Python's stable sort preserves the original ordering of articles with
+    equal relevance scores. The original article list is not modified.
+
+    Args:
+        articles: List of article dictionaries
+
+    Returns:
+        List containing up to five highest-scoring articles
+    """
+    sorted_articles = sorted(
+        articles,
+        key=lambda article: article.get("relevance_score", 0),
+        reverse=True,
+    )
+    return sorted_articles[:5]
+
+
+def format_top_relevance_summary(top_articles: list[dict]) -> str:
+    """
+    Format highest relevance articles section for the report.
+
+    Args:
+        top_articles: List of highest-scoring article dictionaries
+
+    Returns:
+        Formatted Markdown string for the highest relevance articles section
+    """
+    lines = ["## Highest Relevance Articles", ""]
+
+    for i, article in enumerate(top_articles, start=1):
+        title = article.get("title", "Untitled")
+        link = article.get("link", "")
+        relevance_score = article.get("relevance_score", 0)
+
+        if link:
+            title_text = f"**[{title}]({link})**"
+        else:
+            title_text = f"**{title}**"
+
+        lines.append(f"{i}. {title_text} — {relevance_score}/10")
+
     return "\n".join(lines)
 
 
@@ -302,6 +355,11 @@ def generate_report(
         # Add threat category summary section
         category_counts = calculate_category_counts(articles)
         report_lines.append(format_category_summary(category_counts))
+        report_lines.append("")
+
+        # Add highest relevance articles section
+        top_relevance_articles = calculate_top_articles(articles)
+        report_lines.append(format_top_relevance_summary(top_relevance_articles))
         report_lines.append("")
 
         # Add top recent articles section

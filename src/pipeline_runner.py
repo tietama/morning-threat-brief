@@ -11,6 +11,7 @@ from rss_collector import (
 )
 from report_generator import load_articles, generate_report
 
+from relevance_scorer import score_articles
 from threat_classifier import classify_articles
 
 def run_pipeline() -> None:
@@ -30,6 +31,7 @@ def run_pipeline() -> None:
         articles = deduplicate_articles(articles)
         articles = sort_articles(articles)
         articles = classify_articles(articles)
+        articles = score_articles(articles)
         save_articles(articles)
         print_feed_stats(stats)
 
