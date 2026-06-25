@@ -109,3 +109,23 @@ Result:
 - Collection and report generation are now automated
 - Project now functions as a complete end-to-end threat intelligence pipeline
 - Foundation prepared for future LLM summarization features
+
+## 2026-06-25
+
+Updated project to v0.5
+
+Changes:
+
+- Added deterministic threat categorization
+- Implemented keyword-based article classification
+- Added support for multiple threat categories per article
+- Integrated categorization into the pipeline
+- Categories are now store in data/articles.json
+- Added threat category display for individual articles in the report
+- Added Threat Categories summary section with per-category article counts
+
+Result:
+
+- Morning Threat Brief now performs deterministic threat classification in addition to collecting news
+- Reports provide an executive overview of the current threat landscape by category
+- Foundation prepared for future relevance scoring and CISA KEV integration

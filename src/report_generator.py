@@ -4,7 +4,7 @@ import re
 from datetime import datetime
 from html import unescape
 from pathlib import Path
-from collections import defaultdict
+from collections import Counter, defaultdict
 
 
 PROJECT_ROOT = Path(__file__).resolve().parent.parent
@@ -125,6 +125,8 @@ def format_article(article: dict) -> str:
     source = article.get("source", "Unknown Source")
     published = article.get("published", "Date unknown")
     summary = article.get("summary", "")
+    categories = article.get("categories", ["Uncategorized"])
+    category_text = ", ".join(categories)
 
     # Clean summary for display
     cleaned_summary = clean_summary(summary)
@@ -141,6 +143,7 @@ def format_article(article: dict) -> str:
 
 - **Source:** {source}
 - **Published:** {published}
+- **Categories:** {category_text}
 - **Summary:** {cleaned_summary}
 """
     return markdown.strip()
@@ -174,6 +177,44 @@ def format_source_summary(source_counts: list[tuple[str, int]]) -> str:
     lines = ["## Sources", ""]
     for source, count in source_counts:
         lines.append(f"- **{source}:** {count} article{'s' if count != 1 else ''}")
+    return "\n".join(lines)
+
+
+def calculate_category_counts(articles: list[dict]) -> list[tuple[str, int]]:
+    """
+    Calculate article counts per threat category and sort by count descending.
+
+    Articles with multiple categories are counted once in each category.
+    Articles without a categories field default to Uncategorized.
+
+    Args:
+        articles: List of article dictionaries
+
+    Returns:
+        List of (category, count) tuples sorted by count descending
+    """
+    category_counts = Counter()
+
+    for article in articles:
+        categories = article.get("categories", ["Uncategorized"])
+        category_counts.update(categories)
+
+    return category_counts.most_common()
+
+
+def format_category_summary(category_counts: list[tuple[str, int]]) -> str:
+    """
+    Format threat category summary section for the report.
+
+    Args:
+        category_counts: List of (category, count) tuples
+
+    Returns:
+        Formatted Markdown string for the threat categories section
+    """
+    lines = ["## Threat Categories", ""]
+    for category, count in category_counts:
+        lines.append(f"- **{category}:** {count} article{'s' if count != 1 else ''}")
     return "\n".join(lines)
 
 
@@ -256,6 +297,11 @@ def generate_report(
         # Add source summary section
         source_counts = calculate_source_counts(grouped)
         report_lines.append(format_source_summary(source_counts))
+        report_lines.append("")
+
+        # Add threat category summary section
+        category_counts = calculate_category_counts(articles)
+        report_lines.append(format_category_summary(category_counts))
         report_lines.append("")
 
         # Add top recent articles section

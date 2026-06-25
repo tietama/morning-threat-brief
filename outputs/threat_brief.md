@@ -1,6 +1,6 @@
 # Morning Threat Brief
 
-**Generated:** 2026-06-24 10:56:33
+**Generated:** 2026-06-25 07:53:54
 **Total Articles:** 31
 **Total Sources:** 3
 
@@ -10,169 +10,203 @@
 - **SecurityWeek:** 10 articles
 - **www.kyberturvallisuuskeskus.fi RSS:** 6 articles
 
+## Threat Categories
+
+- **Uncategorized:** 14 articles
+- **Vulnerability:** 10 articles
+- **Malware:** 5 articles
+- **Ransomware:** 4 articles
+- **Data Breach:** 2 articles
+- **Phishing:** 1 article
+
 ## Top Recent Articles
 
-1. **[Exploitable CI/CD Vulnerabilities Expose Millions of Repositories to Hijacking](https://www.securityweek.com/exploitable-ci-cd-vulnerabilities-expose-millions-of-repositories-to-hijacking/)** — SecurityWeek, 2026-06-24
-2. **[Stealthy Mistic backdoor linked to ransomware access broker KongTuke](https://www.bleepingcomputer.com/news/security/stealthy-mistic-backdoor-linked-to-ransomware-access-broker-kongtuke/)** — BleepingComputer, 2026-06-24
-3. **[BeyondTrust, LastPass Impacted by Klue-Salesforce Incident](https://www.securityweek.com/beyondtrust-lastpass-impacted-by-klue-salesforce-incident/)** — SecurityWeek, 2026-06-24
-4. **[Webinar Today: Modern Exposure Validation in the AI Era](https://www.securityweek.com/webinar-today-modern-exposure-validation-in-the-ai-era/)** — SecurityWeek, 2026-06-24
-5. **[Hackers Exploiting Cisco Unified CM Vulnerability](https://www.securityweek.com/hackers-exploiting-cisco-unified-cm-vulnerability/)** — SecurityWeek, 2026-06-24
+1. **[Cisco SD-WAN Zero-Day Exploited Months Before Patching](https://www.securityweek.com/cisco-sd-wan-zero-day-exploited-months-before-patching/)** — SecurityWeek, 2026-06-25
+2. **[Google releases new privacy controls for activity history, personalization](https://www.bleepingcomputer.com/news/google/google-releases-new-privacy-controls-for-activity-history-personalization/)** — BleepingComputer, 2026-06-24
+3. **[DraftKings hacker 'Snoopy' sentenced to 18 months in prison](https://www.bleepingcomputer.com/news/security/draftkings-hacker-snoopy-sentenced-to-18-months-in-prison/)** — BleepingComputer, 2026-06-24
+4. **[Mandiant reveals how Cisco SD-WAN zero-day attacks gained root access](https://www.bleepingcomputer.com/news/security/mandiant-reveals-how-cisco-sd-wan-zero-day-attacks-gained-root-access/)** — BleepingComputer, 2026-06-24
+5. **[Malicious Edge extension abuses Native Messaging as bridge to malware](https://www.bleepingcomputer.com/news/security/malicious-edge-extension-abuses-native-messaging-as-bridge-to-malware/)** — BleepingComputer, 2026-06-24
 
 ## BleepingComputer
 *15 article(s)*
+
+**[Google releases new privacy controls for activity history, personalization](https://www.bleepingcomputer.com/news/google/google-releases-new-privacy-controls-for-activity-history-personalization/)**
+
+- **Source:** BleepingComputer
+- **Published:** 2026-06-24T23:46:17+00:00
+- **Categories:** Uncategorized
+- **Summary:** Google is rolling out new privacy controls for Search services and Google Play, giving you more control over saved history and personalized recommendations. [...]
+
+**[DraftKings hacker 'Snoopy' sentenced to 18 months in prison](https://www.bleepingcomputer.com/news/security/draftkings-hacker-snoopy-sentenced-to-18-months-in-prison/)**
+
+- **Source:** BleepingComputer
+- **Published:** 2026-06-24T21:55:43+00:00
+- **Categories:** Uncategorized
+- **Summary:** A 21-year-old using the alias "Snoopy" was sentenced to 18 months in prison for his role in hacking DraftKings accounts in the November 2022 cyberattack. [...]
+
+**[Mandiant reveals how Cisco SD-WAN zero-day attacks gained root access](https://www.bleepingcomputer.com/news/security/mandiant-reveals-how-cisco-sd-wan-zero-day-attacks-gained-root-access/)**
+
+- **Source:** BleepingComputer
+- **Published:** 2026-06-24T21:29:10+00:00
+- **Categories:** Vulnerability
+- **Summary:** New details have been revealed on how hackers exploited a Cisco Catalyst SD-WAN vulnerability tracked as CVE-2026-20245 in zero-day attacks to create rogue root accounts on targeted devices. [...]
+
+**[Malicious Edge extension abuses Native Messaging as bridge to malware](https://www.bleepingcomputer.com/news/security/malicious-edge-extension-abuses-native-messaging-as-bridge-to-malware/)**
+
+- **Source:** BleepingComputer
+- **Published:** 2026-06-24T20:58:22+00:00
+- **Categories:** Ransomware, Malware
+- **Summary:** A malicious Microsoft Edge extension dubbed 'Edgecution' has been used in a ransomware attack to escape the browser sandbox and deploy a Python-based backdoor. [...]
+
+**[CISA warns of max severity Ubiquiti flaws exploited in attacks](https://www.bleepingcomputer.com/news/security/cisa-warns-of-max-severity-ubiquiti-flaws-exploited-in-attacks/)**
+
+- **Source:** BleepingComputer
+- **Published:** 2026-06-24T14:35:15+00:00
+- **Categories:** Vulnerability
+- **Summary:** The U.S. Cybersecurity and Infrastructure Security Agency (CISA) is warning of hackers actively exploiting flaws in Ubiquity UniFi OS and Lantronix serial-to-ethernet servers. [...]
+
+**[Amadey, StealC malware operations disrupted in Operation Endgame action](https://www.bleepingcomputer.com/news/security/amadey-stealc-malware-operations-disrupted-in-operation-endgame-action/)**
+
+- **Source:** BleepingComputer
+- **Published:** 2026-06-24T14:35:11+00:00
+- **Categories:** Ransomware, Malware
+- **Summary:** Microsoft, Europol, and international partners have disrupted infrastructure used by the Amadey and StealC malware operations as part of Operation Endgame, which targets cybercriminal services and ransomware gangs. [...]
+
+**[Securing the service desk: Why social engineering attacks keep succeeding](https://www.bleepingcomputer.com/news/security/securing-the-service-desk-why-social-engineering-attacks-keep-succeeding/)**
+
+- **Source:** BleepingComputer
+- **Published:** 2026-06-24T14:02:12+00:00
+- **Categories:** Uncategorized
+- **Summary:** Service desks have become a favored target for attackers seeking password resets, MFA changes, and access to corporate accounts. Specops Software breaks down how service desk social engineering attacks work and how organizations can defend against them. [...]
 
 **[Stealthy Mistic backdoor linked to ransomware access broker KongTuke](https://www.bleepingcomputer.com/news/security/stealthy-mistic-backdoor-linked-to-ransomware-access-broker-kongtuke/)**
 
 - **Source:** BleepingComputer
 - **Published:** 2026-06-24T10:41:51+00:00
+- **Categories:** Ransomware, Malware
 - **Summary:** A new backdoor dubbed Mistic has been observed in financially motivated attacks targeting organizations in the insurance, education, IT, and professional services sectors. [...]
 
 **[Cisco Unified CM flaw CVE-2026-20230 now exploited in attacks](https://www.bleepingcomputer.com/news/security/cisco-unified-cm-sme-flaw-cve-2026-20230-now-exploited-in-attacks/)**
 
 - **Source:** BleepingComputer
 - **Published:** 2026-06-23T21:48:32+00:00
+- **Categories:** Vulnerability
 - **Summary:** A high-severity SSRF vulnerability, tracked as CVE-2026-20230, in Cisco Unified Communications Manager Server is now being exploited in attacks. [...]
 
 **[Tata Electronics confirms cyberattack as hackers leak data](https://www.bleepingcomputer.com/news/security/tata-electronics-confirms-cyberattack-as-hackers-leak-data/)**
 
 - **Source:** BleepingComputer
 - **Published:** 2026-06-23T21:06:32+00:00
+- **Categories:** Data Breach
 - **Summary:** Tata Electronics has confirmed in a statement to BleepingComputer that it was the target of a cyberattack that impacted parts of its IT infrastructure. [...]
 
 **[Windows 11 KB5095093 update rolls out new Point-in-Time restore feature](https://www.bleepingcomputer.com/news/microsoft/windows-11-kb5095093-update-rolls-out-new-point-in-time-restore-feature/)**
 
 - **Source:** BleepingComputer
 - **Published:** 2026-06-23T20:22:21+00:00
+- **Categories:** Uncategorized
 - **Summary:** ​​Microsoft has released the KB5095093 preview cumulative update for Windows 11 24H2 and 25H2, which fixes numerous bugs and begins rolling out new features, including the new Point-in-Time restore feature. [...]
 
 **[Healthtech firm Xolis suffers data breach impacting 1.4 million people](https://www.bleepingcomputer.com/news/security/healthtech-firm-xolis-suffers-data-breach-impacting-14-million-people/)**
 
 - **Source:** BleepingComputer
 - **Published:** 2026-06-23T19:59:12+00:00
+- **Categories:** Phishing, Data Breach
 - **Summary:** Healthcare technology company Xsolis says that sensitive data belonging to nearly 1.4 million individuals was compromised in a phishing attack that gave attackers access to its network. [...]
 
 **[New macOS ClickFix attack silently mounts DMGs to push infostealer](https://www.bleepingcomputer.com/news/security/new-macos-clickfix-attack-silently-mounts-dmgs-to-push-infostealer/)**
 
 - **Source:** BleepingComputer
 - **Published:** 2026-06-23T18:30:16+00:00
+- **Categories:** Malware
 - **Summary:** A new macOS ClickFix campaign is using Terminal commands to silently download, mount, and launch info-stealing malware from malicious disk image (DMG) files. [...]
 
 **[Scattered Spider members plead guilty to hacking Transport for London](https://www.bleepingcomputer.com/news/security/scattered-spider-members-plead-guilty-to-hacking-transport-for-london/)**
 
 - **Source:** BleepingComputer
 - **Published:** 2026-06-23T15:31:59+00:00
+- **Categories:** Uncategorized
 - **Summary:** Two members of the 'Scattered Spider' cybercrime group pleaded guilty to hacking the Transport for London (TfL) systems in 2024. [...]
 
 **[The Exploit Doesn't Exist. You Can Still Prove It Works Against You](https://www.bleepingcomputer.com/news/security/the-exploit-doesnt-exist-you-can-still-prove-it-works-against-you/)**
 
 - **Source:** BleepingComputer
 - **Published:** 2026-06-23T14:01:11+00:00
+- **Categories:** Vulnerability
 - **Summary:** Attackers can now weaponize newly disclosed vulnerabilities far faster than most organizations can patch them. Picus Security explains how security teams can validate exploitability before a public exploit even exists. [...]
-
-**[LastPass confirms data breach in Klue supply chain attack](https://www.bleepingcomputer.com/news/security/lastpass-confirms-data-breach-in-klue-supply-chain-attack/)**
-
-- **Source:** BleepingComputer
-- **Published:** 2026-06-23T13:58:25+00:00
-- **Summary:** LastPass announced that hackers accessed customer data from its Salesforce environment after stealing the company's OAuth tokens in the Klue supply chain attack earlier this month. [...]
-
-**[Webinar: Why email security teams are drowning in alerts](https://www.bleepingcomputer.com/news/security/webinar-why-email-security-teams-are-drowning-in-alerts/)**
-
-- **Source:** BleepingComputer
-- **Published:** 2026-06-23T12:12:20+00:00
-- **Summary:** Phishing, BEC, and account takeover attacks continue to overwhelm security teams with alerts and investigations. This webinar explores how behavioral AI can help automate detection and response workflows, reducing alert fatigue and improving operational efficiency. [...]
-
-**[WhatsApp phishing attack uses fake business docs to hack PCs](https://www.bleepingcomputer.com/news/security/whatsapp-phishing-attack-uses-fake-business-docs-to-hack-pcs/)**
-
-- **Source:** BleepingComputer
-- **Published:** 2026-06-22T22:42:21+00:00
-- **Summary:** An ongoing malware campaign is targeting WhatsApp users in multiple countries with deceptive messages that push VBScript files, leading to remote system access. [...]
-
-**[JaredFromSubway MEV bot hacked in $15 million crypto theft](https://www.bleepingcomputer.com/news/security/jaredfromsubway-mev-bot-hacked-in-15-million-crypto-theft/)**
-
-- **Source:** BleepingComputer
-- **Published:** 2026-06-22T21:52:18+00:00
-- **Summary:** The JaredFromSubway Ethereum MEV (Maximal Extractable Value) bot suffered a $15 million loss after an attacker manipulated the opportunity-detection logic by creating fake cryptocurrency trading opportunities. [...]
-
-**[FFmpeg fixes PixelSmash flaw in widely used video decoder](https://www.bleepingcomputer.com/news/security/ffmpeg-fixes-pixelsmash-flaw-in-widely-used-video-decoder/)**
-
-- **Source:** BleepingComputer
-- **Published:** 2026-06-22T21:05:01+00:00
-- **Summary:** A newly disclosed FFmpeg flaw dubbed 'PixelSmash' could be exploited for remote code execution on Jellyfin servers under certain conditions, and can also trigger a denial-of-service condition in applications like Kodi, Emby, Nextcloud, PhotoPrism, and OBS Studio. [...]
-
-**[FortiBleed campaign used custom FortiGate sniffer to steal credentials](https://www.bleepingcomputer.com/news/security/fortibleed-campaign-used-custom-fortigate-sniffer-to-steal-credentials/)**
-
-- **Source:** BleepingComputer
-- **Published:** 2026-06-22T20:01:02+00:00
-- **Summary:** Security firm SOCRadar says the large-scale FortiBleed campaign targeting Fortinet FortiGate devices used custom sniffers to harvest authentication secrets from compromised firewalls and steal credentials. [...]
-
-**[Microsoft says Windows 11 26H2 is coming soon, details upgrade process](https://www.bleepingcomputer.com/news/microsoft/microsoft-says-windows-11-26h2-is-coming-soon-details-upgrade-process/)**
-
-- **Source:** BleepingComputer
-- **Published:** 2026-06-22T17:41:31+00:00
-- **Summary:** Microsoft has confirmed that Windows 11 version 26H2 will be the next feature update and that devices running Windows 11 24H2 and 25H2 will be able to upgrade using a small enablement package. [...]
 
 ## SecurityWeek
 *10 article(s)*
+
+**[Cisco SD-WAN Zero-Day Exploited Months Before Patching](https://www.securityweek.com/cisco-sd-wan-zero-day-exploited-months-before-patching/)**
+
+- **Source:** SecurityWeek
+- **Published:** 2026-06-25T06:08:43+00:00
+- **Categories:** Vulnerability
+- **Summary:** CVE-2026-20245, the 7th Cisco SD-WAN vulnerability exploited in 2026, was used for months prior to its disclosure and patching. The post Cisco SD-WAN Zero-Day Exploited Months Before Patching appeared first on SecurityWeek.
+
+**[When Information Becomes the Attack Surface – Understanding AI Agent Traps](https://www.securityweek.com/when-information-becomes-the-attack-surface-understanding-ai-agent-traps/)**
+
+- **Source:** SecurityWeek
+- **Published:** 2026-06-24T17:37:57+00:00
+- **Categories:** Vulnerability
+- **Summary:** From hidden content injections to cognitive state poisoning, attackers are turning trusted data sources into traps for autonomous AI. The post When Information Becomes the Attack Surface – Understanding AI Agent Traps appeared first on SecurityWeek.
+
+**[Microsoft and Allies Smash Shared Infrastructure of Amadey and StealC Malware](https://www.securityweek.com/microsoft-and-allies-smash-shared-infrastructure-of-amadey-and-stealc-malware/)**
+
+- **Source:** SecurityWeek
+- **Published:** 2026-06-24T15:02:07+00:00
+- **Categories:** Vulnerability, Malware
+- **Summary:** Hundreds of C&C servers were disrupted in an operation involving law enforcement and several cybersecurity companies. The post Microsoft and Allies Smash Shared Infrastructure of Amadey and StealC Malware appeared first on SecurityWeek.
+
+**[Exclusive: Meet AIVEX, a New Triage Model Built to Reduce Supply Chain Threat and Risk](https://www.securityweek.com/exclusive-meet-aivex-a-new-triage-model-built-to-reduce-supply-chain-threat-and-risk/)**
+
+- **Source:** SecurityWeek
+- **Published:** 2026-06-24T14:30:35+00:00
+- **Categories:** Uncategorized
+- **Summary:** The new framework seeks to help security teams identify which software supply chain vulnerabilities pose the greatest operational, safety, and business risks in AI-driven environments. The post Exclusive: Meet AIVEX, a New Triage Model Built to Reduce Supply Chain Threat and Risk appeared first on...
+
+**[macOS Weaknesses Chained to Silently Disable Endpoint Security Agents](https://www.securityweek.com/macos-weaknesses-chained-to-silently-disable-endpoint-security-agents/)**
+
+- **Source:** SecurityWeek
+- **Published:** 2026-06-24T13:50:53+00:00
+- **Categories:** Vulnerability
+- **Summary:** A standard non-admin account is sufficient to conduct an attack that exploits legitimate OS behavior rather than software vulnerabilities. The post macOS Weaknesses Chained to Silently Disable Endpoint Security Agents appeared first on SecurityWeek.
+
+**[Third DraftKings Hacker Sentenced to 18 Months in Prison](https://www.securityweek.com/third-draftkings-hacker-sentenced-to-18-months-in-prison/)**
+
+- **Source:** SecurityWeek
+- **Published:** 2026-06-24T12:52:40+00:00
+- **Categories:** Uncategorized
+- **Summary:** Nathan Austad has been ordered to pay roughly $1.8 million in forfeiture and restitution, and the sentence also includes 3 years of supervised release. The post Third DraftKings Hacker Sentenced to 18 Months in Prison appeared first on SecurityWeek.
+
+**[Critical Ubiquiti Vulnerabilities in Attackers’ Crosshairs](https://www.securityweek.com/critical-ubiquiti-vulnerabilities-in-attackers-crosshairs/)**
+
+- **Source:** SecurityWeek
+- **Published:** 2026-06-24T12:32:17+00:00
+- **Categories:** Uncategorized
+- **Summary:** The flaws allow remote, unauthenticated attackers to make system changes, access underlying accounts, and inject commands. The post Critical Ubiquiti Vulnerabilities in Attackers’ Crosshairs appeared first on SecurityWeek.
+
+**[Agentic AI Security: Wrong Context, Wrong Decisions at Machine Speed](https://www.securityweek.com/agentic-ai-security-wrong-context-wrong-decisions-at-machine-speed/)**
+
+- **Source:** SecurityWeek
+- **Published:** 2026-06-24T12:00:00+00:00
+- **Categories:** Uncategorized
+- **Summary:** Context is the central plank of AI in general, and agentic AI in particular. If an AI system doesn’t have the correct context, it cannot make the correct decisions. The post Agentic AI Security: Wrong Context, Wrong Decisions at Machine Speed appeared first on SecurityWeek.
+
+**[New ‘Mistic’ RAT Opens Door to Several Ransomware Families](https://www.securityweek.com/new-mistic-rat-opens-door-to-several-ransomware-families/)**
+
+- **Source:** SecurityWeek
+- **Published:** 2026-06-24T11:42:38+00:00
+- **Categories:** Ransomware
+- **Summary:** Mistic is used by Woodgnat, an initial access broker working with Qilin, Interlock, Rhysida, Akira, 8Base, and Black Basta. The post New ‘Mistic’ RAT Opens Door to Several Ransomware Families appeared first on SecurityWeek.
 
 **[Exploitable CI/CD Vulnerabilities Expose Millions of Repositories to Hijacking](https://www.securityweek.com/exploitable-ci-cd-vulnerabilities-expose-millions-of-repositories-to-hijacking/)**
 
 - **Source:** SecurityWeek
 - **Published:** 2026-06-24T10:55:05+00:00
+- **Categories:** Vulnerability
 - **Summary:** The security defects allow unauthenticated users to take control of the open source software supply chain. The post Exploitable CI/CD Vulnerabilities Expose Millions of Repositories to Hijacking appeared first on SecurityWeek.
-
-**[BeyondTrust, LastPass Impacted by Klue-Salesforce Incident](https://www.securityweek.com/beyondtrust-lastpass-impacted-by-klue-salesforce-incident/)**
-
-- **Source:** SecurityWeek
-- **Published:** 2026-06-24T10:03:06+00:00
-- **Summary:** Over a dozen Klue customers have confirmed that hackers stole data from their Salesforce instances. The post BeyondTrust, LastPass Impacted by Klue-Salesforce Incident appeared first on SecurityWeek.
-
-**[Webinar Today: Modern Exposure Validation in the AI Era](https://www.securityweek.com/webinar-today-modern-exposure-validation-in-the-ai-era/)**
-
-- **Source:** SecurityWeek
-- **Published:** 2026-06-24T08:04:37+00:00
-- **Summary:** The exploit timeline collapsed. Make sure your validation didn't. The post Webinar Today: Modern Exposure Validation in the AI Era appeared first on SecurityWeek.
-
-**[Hackers Exploiting Cisco Unified CM Vulnerability](https://www.securityweek.com/hackers-exploiting-cisco-unified-cm-vulnerability/)**
-
-- **Source:** SecurityWeek
-- **Published:** 2026-06-24T05:44:15+00:00
-- **Summary:** Cisco noted that a PoC had been available for CVE-2026-20230 when it announced patches in early June. The post Hackers Exploiting Cisco Unified CM Vulnerability appeared first on SecurityWeek.
-
-**[Anthropic’s Mythos Model Found Vulnerabilities in Classified US Government Systems, Official Says](https://www.securityweek.com/anthropics-mythos-model-found-vulnerabilities-in-classified-us-government-systems-official-says/)**
-
-- **Source:** SecurityWeek
-- **Published:** 2026-06-24T03:29:58+00:00
-- **Summary:** Come vulnerabilities were found within hours, but that does not mean the model was able to exploit them within that time, the official said. The post Anthropic’s Mythos Model Found Vulnerabilities in Classified US Government Systems, Official Says appeared first on SecurityWeek.
-
-**[Dragos Unveils AI for OT Security](https://www.securityweek.com/dragos-unveils-ai-for-ot-security/)**
-
-- **Source:** SecurityWeek
-- **Published:** 2026-06-23T17:26:07+00:00
-- **Summary:** Named EmberAI, the new capability is built on Dragos’ massive operational technology cybersecurity dataset. The post Dragos Unveils AI for OT Security appeared first on SecurityWeek.
-
-**[Data Exposure Flaws Threaten Dify AI Platform Used by 1 Million Apps](https://www.securityweek.com/data-exposure-flaws-threaten-dify-ai-platform-powering-over-1-million-apps/)**
-
-- **Source:** SecurityWeek
-- **Published:** 2026-06-23T15:36:24+00:00
-- **Summary:** Attackers could abuse Dify's multi-tenant cloud service to read private chats, preview other tenants' documents, and reach internal APIs. The post Data Exposure Flaws Threaten Dify AI Platform Used by 1 Million Apps appeared first on SecurityWeek.
-
-**[Eight-Year-Old Samsung KNOX Flaw Exposed Millions of Galaxy Devices to Kernel Attacks](https://www.securityweek.com/eight-year-old-samsung-knox-flaw-exposed-millions-of-galaxy-devices-to-kernel-attacks/)**
-
-- **Source:** SecurityWeek
-- **Published:** 2026-06-23T13:00:00+00:00
-- **Summary:** The high-severity use-after-free vulnerability in Samsung's KNOX security framework affected Android-powered Galaxy devices from the S9 through S25. The post Eight-Year-Old Samsung KNOX Flaw Exposed Millions of Galaxy Devices to Kernel Attacks appeared first on SecurityWeek.
-
-**[CISO Conversations: Carl Froggett – Combining CISO and CIO at Deep Instinct](https://www.securityweek.com/ciso-conversations-carl-froggett-combining-ciso-and-cio-at-deep-instinct/)**
-
-- **Source:** SecurityWeek
-- **Published:** 2026-06-23T12:50:00+00:00
-- **Summary:** Carl Froggett combines CISO and CIO. He currently occupies both positions at Deep Instinct. Before then, he was CISO at Citi for almost 17 years. The post CISO Conversations: Carl Froggett – Combining CISO and CIO at Deep Instinct appeared first on SecurityWeek.
-
-**[Algerian Man Extradited to US for Running Cybercrime Marketplaces](https://www.securityweek.com/algerian-man-extradited-to-us-for-running-cybercrime-marketplaces/)**
-
-- **Source:** SecurityWeek
-- **Published:** 2026-06-23T12:06:15+00:00
-- **Summary:** 26-year-old Abdellah Belmili faces up to 30 years in prison for allegedly operating the marketplaces Market0Day and Spoxy. The post Algerian Man Extradited to US for Running Cybercrime Marketplaces appeared first on SecurityWeek.
 
 ## www.kyberturvallisuuskeskus.fi RSS
 *6 article(s)*
@@ -181,34 +215,40 @@
 
 - **Source:** www.kyberturvallisuuskeskus.fi RSS
 - **Published:** 2026-06-23T10:46:10+00:00
+- **Categories:** Uncategorized
 - **Summary:** Kesäkuussa 2026 paljastunut FortiBleed-kampanja on yksi vuoden merkittävimmistä maailmanlaajuisista kyberhyökkäyksistä. Se koskee erityisesti Fortinetin FortiGate-palomuureja ja SSL-VPN-laitteita, joihin on kohdistunut tietomurtoja ja tietomurron yrityksiä aiemmin vuotaneita ja varastettuja...
 
 **[Kyberturvallisuuskeskuksen viikkokatsaus - 24/2026](https://www.kyberturvallisuuskeskus.fi/fi/uutiset/kyberturvallisuuskeskuksen-viikkokatsaus-242026?mtm_campaign=rss&mtm_source=rss&mtm_medium=rss)**
 
 - **Source:** www.kyberturvallisuuskeskus.fi RSS
 - **Published:** 2026-06-12T05:02:01+00:00
+- **Categories:** Uncategorized
 - **Summary:** Tällä viikolla kerromme vaarallisista puhelinhuijauksista Klarnan nimissä. Kerromme myös kesän aikana yleistyvistä toimitusjohtajahuijauksista sekä toivotamme halukkaat tervetulleeksi kansainväliseen Connect4Cyber verkostoitumistapahtumaan. Nostamme lisäksi toukokouun Kybersään julkaisun sekä...
 
 **[Toukokuun Kybersää 2026](https://www.kyberturvallisuuskeskus.fi/fi/uutiset/toukokuun-kybersaa-2026?mtm_campaign=rss&mtm_source=rss&mtm_medium=rss)**
 
 - **Source:** www.kyberturvallisuuskeskus.fi RSS
 - **Published:** 2026-06-11T08:53:39+00:00
+- **Categories:** Uncategorized
 - **Summary:** Toukokuun kybersää näyttäytyi vaihtelevana ja paikoin epävakaana. Kuukauden aikana nähtiin toistuvia ja laaja-alaisia huijauskampanjoita, joissa rikolliset esiintyivät esimerkiksi lasten, viranomaisten, pankkien ja palveluiden nimissä.
 
 **[Check Point VPN -tuotteissa aktiivisesti hyväksikäytetty haavoittuvuus](https://www.kyberturvallisuuskeskus.fi/fi/haavoittuvuudet/haavoittuvuus-2026-16?mtm_campaign=rss&mtm_source=rss&mtm_medium=rss)**
 
 - **Source:** www.kyberturvallisuuskeskus.fi RSS
 - **Published:** 2026-06-09T12:29:05+00:00
+- **Categories:** Vulnerability
 - **Summary:** Check Point julkaisi korjauspaketin Remote Access VPN, Mobile Access ja Spark Firewall -tuotteisiin joka korjaa kriittisen tunnistautumisen ohituksen mahdollistavan haavoittuvuuden CVE-2026-50751. Haavoittuvuuden hyväksikäyttöä on jo havaittu, joten haavoittuvuudelle alttiille laitteille tulee...
 
 **[Kyberturvallisuuskeskuksen viikkokatsaus - 23/2026](https://www.kyberturvallisuuskeskus.fi/fi/uutiset/kyberturvallisuuskeskuksen-viikkokatsaus-232026?mtm_campaign=rss&mtm_source=rss&mtm_medium=rss)**
 
 - **Source:** www.kyberturvallisuuskeskus.fi RSS
 - **Published:** 2026-06-05T05:40:10+00:00
+- **Categories:** Uncategorized
 - **Summary:** Tällä viikolla kerromme pienestä kesän kybermuistilistasta, jonka avulla voit parantaa tietoturvaa helpoilla toimenpiteillä. Kerromme myös uuden kyberkestävyyslain voimaantulosta sekä esittelemme keväällä järjestettyä valtionhallinnon kyberharjoitusta. Lopuksi tutustumme ajankohtaisiin huijauksiin....
 
 **[Kyberturvallisuuskeskuksen viikkokatsaus - 22/2026](https://www.kyberturvallisuuskeskus.fi/fi/uutiset/kyberturvallisuuskeskuksen-viikkokatsaus-222026?mtm_campaign=rss&mtm_source=rss&mtm_medium=rss)**
 
 - **Source:** www.kyberturvallisuuskeskus.fi RSS
 - **Published:** 2026-05-29T06:16:13+00:00
+- **Categories:** Uncategorized
 - **Summary:** Viikkokatsauksessa kerromme Traficomin nimissä liikkeellä olleista huijausviesteistä ja kuinka uudistettu Hyöky-palvelu kannustaa vahvistamaan oman verkon turvallisuutta. EU:n kyberkestävyyssäädöksen voimaantulo tuo mukanaan uusia velvoitteita, joista kerrotaan tarkemmin 3.6. järjestettävässä...
