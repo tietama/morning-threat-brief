@@ -1,8 +1,6 @@
 # Morning Threat Brief
 
-Morning Threat Brief is a Python-based threat intelligence collection and reporting pipeline.
-
-The project collects cybersecurity news from multiple RSS feeds, filters and normalizes the data, removes duplicates, and generates a structured Markdown threat brief for analyst review.
+Morning Threat Brief enriches collected cybersecurity news with deterministic threat classification, relevance scoring, and correlation against the CISA Known Exploited Vulnerabilities (KEV) catalog before generating an analyst-friendly Markdown report.
 
 ## Project Goals
 
@@ -13,7 +11,7 @@ The project collects cybersecurity news from multiple RSS feeds, filters and nor
 
 ## Current Status
 
-**Current Version:** v0.4
+**Current Version:** v0.7
 
 ### Implemented
 
@@ -26,6 +24,11 @@ The project collects cybersecurity news from multiple RSS feeds, filters and nor
 - Markdown threat brief generation
 - Executive summary sections
 - Automated pipeline execution
+- Deterministic threat categorization
+- Explainable relevance scoring
+- CISA KEV correlation
+- CVE extraction
+- Executive KEV reporting
 
 ## Pipeline Workflow
 
@@ -34,8 +37,13 @@ The project collects cybersecurity news from multiple RSS feeds, filters and nor
 3. Filter outdated content
 4. Deduplicate articles
 5. Sort articles newest-first
-6. Save normalized article data
-7. Generate Markdown threat brief
+6. Categorize threats
+7. Calculate relevance scores
+8. Fetch CISA KEV catalog
+9. Extract CVEs from articles
+10. Correlate articles with KEV entries
+11. Save enriched article data
+12. Generate Markdown threat brief
 
 ## Project Structure
 
@@ -96,12 +104,12 @@ Top Recent Articles:
 - v0.2 Filtering & Deduplication
 - v0.3 Markdown Report Generation
 - v0.4 Pipeline Runner
-
-### Planned
-
 - v0.5 Threat Categorization
 - v0.6 Relevance / Risk Scoring
 - v0.7 CISA KEV Integration
+
+### Planned
+
 - v0.8 LLM Summarization
 
 ### Future Ideas

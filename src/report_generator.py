@@ -107,6 +107,17 @@ def clean_summary(summary: str, max_length: int = 300) -> str:
 
 
 
+def get_matched_kev_cves(article: dict) -> list[str]:
+    """
+    Return CVE IDs from an article's KEV match entries.
+    """
+    return [
+        match.get("cveID", "")
+        for match in article.get("kev_matches", [])
+        if match.get("cveID")
+    ]
+
+
 def format_article(article: dict) -> str:
     """
     Format a single article as Markdown.
@@ -130,6 +141,13 @@ def format_article(article: dict) -> str:
     relevance_score = article.get("relevance_score", 0)
     relevance_reasons = article.get("relevance_reasons", [])
     relevance_reason_text = "; ".join(relevance_reasons) if relevance_reasons else "None"
+    kev_status = "Known Exploited Vulnerability" if article.get("kev") is True else "None"
+    matched_cves = get_matched_kev_cves(article)
+    matched_cve_line = (
+        f"- **Matched CVEs:** {', '.join(matched_cves)}\n"
+        if matched_cves
+        else ""
+    )
 
     # Clean summary for display
     cleaned_summary = clean_summary(summary)
@@ -149,7 +167,8 @@ def format_article(article: dict) -> str:
 - **Categories:** {category_text}
 - **Relevance Score:** {relevance_score}/10
 - **Relevance Reasons:** {relevance_reason_text}
-- **Summary:** {cleaned_summary}
+- **KEV Status:** {kev_status}
+{matched_cve_line}- **Summary:** {cleaned_summary}
 """
     return markdown.strip()
 
@@ -220,6 +239,69 @@ def format_category_summary(category_counts: list[tuple[str, int]]) -> str:
     lines = ["## Threat Categories", ""]
     for category, count in category_counts:
         lines.append(f"- **{category}:** {count} article{'s' if count != 1 else ''}")
+    return "\n".join(lines)
+
+
+def calculate_kev_articles(articles: list[dict]) -> list[dict]:
+    """
+    Return articles that reference CISA KEV entries.
+
+    Articles are sorted by relevance score descending. Python's stable sort
+    preserves the original ordering of articles with equal scores.
+
+    Args:
+        articles: List of article dictionaries
+
+    Returns:
+        List of KEV articles sorted by relevance score descending
+    """
+    kev_articles = [
+        article
+        for article in articles
+        if article.get("kev") is True
+    ]
+    return sorted(
+        kev_articles,
+        key=lambda article: article.get("relevance_score", 0),
+        reverse=True,
+    )
+
+
+def format_kev_summary(kev_articles: list[dict]) -> str:
+    """
+    Format the Known Exploited Vulnerabilities summary section.
+
+    Args:
+        kev_articles: List of articles referencing CISA KEV entries
+
+    Returns:
+        Formatted Markdown string for the KEV summary section
+    """
+    lines = ["## Known Exploited Vulnerabilities", ""]
+
+    if not kev_articles:
+        lines.append(
+            "No collected articles reference vulnerabilities currently listed "
+            "in the CISA Known Exploited Vulnerabilities catalog."
+        )
+        return "\n".join(lines)
+
+    lines.append(f"**Articles referencing CISA KEV entries:** {len(kev_articles)}")
+    lines.append("")
+
+    for i, article in enumerate(kev_articles, start=1):
+        title = article.get("title", "Untitled")
+        link = article.get("link", "")
+        matched_cves = get_matched_kev_cves(article)
+        cve_text = ", ".join(matched_cves)
+
+        if link:
+            title_text = f"**[{title}]({link})**"
+        else:
+            title_text = f"**{title}**"
+
+        lines.append(f"{i}. {title_text} — {cve_text}")
+
     return "\n".join(lines)
 
 
@@ -355,6 +437,11 @@ def generate_report(
         # Add threat category summary section
         category_counts = calculate_category_counts(articles)
         report_lines.append(format_category_summary(category_counts))
+        report_lines.append("")
+
+        # Add Known Exploited Vulnerabilities summary section
+        kev_articles = calculate_kev_articles(articles)
+        report_lines.append(format_kev_summary(kev_articles))
         report_lines.append("")
 
         # Add highest relevance articles section

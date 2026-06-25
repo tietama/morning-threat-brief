@@ -1,5 +1,80 @@
 [
   {
+    "title": "Lantronix Serial-to-IP Converter Flaw Exploited in Attacks After OT Threat Warning",
+    "link": "https://www.securityweek.com/lantronix-serial-to-ip-converter-flaw-exploited-in-attacks-after-ot-threat-warning/",
+    "published": "2026-06-25T11:23:40+00:00",
+    "source": "SecurityWeek",
+    "summary": "<p>The exploited flaw, CVE-2025-67038, is one of the vulnerabilities disclosed in April as part of the BRIDGE:BREAK research project.</p>\n<p>The post <a href=\"https://www.securityweek.com/lantronix-serial-to-ip-converter-flaw-exploited-in-attacks-after-ot-threat-warning/\">Lantronix Serial-to-IP Converter Flaw Exploited in Attacks After OT Threat Warning</a> appeared first on <a href=\"https://www.securityweek.com\">SecurityWeek</a>.</p>",
+    "feed_url": "https://www.securityweek.com/feed/",
+    "categories": [
+      "Vulnerability"
+    ],
+    "relevance_score": 7,
+    "relevance_reasons": [
+      "Vulnerability category",
+      "CVE mentioned",
+      "Exploit mentioned"
+    ],
+    "cves": [
+      "CVE-2025-67038"
+    ],
+    "kev": true,
+    "kev_matches": [
+      {
+        "cveID": "CVE-2025-67038",
+        "vendorProject": "Lantronix",
+        "product": "EDS5000",
+        "vulnerabilityName": "Lantronix EDS5000 Code Injection Vulnerability",
+        "dateAdded": "2026-06-23",
+        "shortDescription": "Lantronix EDS5000 contains a code injection vulnerability that could allow attackers to inject arbitrary OS commands into the username parameter. Injected commands are executed with root privileges.",
+        "requiredAction": "Apply mitigations in accordance with vendor instructions, ensuring compliance with CISA’s BOD 26-04 Prioritizing Security Updates Based on Risk (see URL in Notes) guidance and CISA’s “Forensics Triage Requirements” (see URL in Notes). Follow applicable BOD 26-04 guidance for cloud services or discontinue use of the product if mitigations are unavailable. Stakeholders are responsible for evaluating each asset's internet exposure and ensuring adherence to BOD 26-04 patching guidelines.",
+        "dueDate": "2026-06-26",
+        "knownRansomwareCampaignUse": "Unknown",
+        "notes": "https://ltrxdev.atlassian.net/wiki/spaces/LTRXTS/pages/2538438657/Latest+Firmware+for+the+EDS5000+series+EDS5008+EDS5016+EDS5032 ; BOD 26-04: https://www.cisa.gov/news-events/directives/bod-26-04-prioritizing-security-updates-based-risk ; Forensics Triage Requirements: https://www.cisa.gov/news-events/directives/bod-26-04-implementation-guidance-prioritizing-security-updates-based-risk ; https://nvd.nist.gov/vuln/detail/CVE-2025-67038",
+        "cwes": [
+          "CWE-78",
+          "CWE-94"
+        ]
+      }
+    ]
+  },
+  {
+    "title": "GitLab Patches Code Execution, Information Disclosure Vulnerabilities",
+    "link": "https://www.securityweek.com/gitlab-patches-code-execution-information-disclosure-vulnerabilities/",
+    "published": "2026-06-25T11:10:04+00:00",
+    "source": "SecurityWeek",
+    "summary": "<p>The latest GitLab CE/EE updates address 13 vulnerabilities, including three high-severity defects.</p>\n<p>The post <a href=\"https://www.securityweek.com/gitlab-patches-code-execution-information-disclosure-vulnerabilities/\">GitLab Patches Code Execution, Information Disclosure Vulnerabilities</a> appeared first on <a href=\"https://www.securityweek.com\">SecurityWeek</a>.</p>",
+    "feed_url": "https://www.securityweek.com/feed/",
+    "categories": [
+      "Vulnerability"
+    ],
+    "relevance_score": 3,
+    "relevance_reasons": [
+      "Vulnerability category"
+    ],
+    "cves": [],
+    "kev": false,
+    "kev_matches": []
+  },
+  {
+    "title": "25-Year-Old Vulnerability Patched in Curl",
+    "link": "https://www.securityweek.com/25-year-old-vulnerability-patched-in-curl/",
+    "published": "2026-06-25T09:25:02+00:00",
+    "source": "SecurityWeek",
+    "summary": "<p>The latest version of the open source data transfer tool resolves 18 medium and low-severity vulnerabilities.</p>\n<p>The post <a href=\"https://www.securityweek.com/25-year-old-vulnerability-patched-in-curl/\">25-Year-Old Vulnerability Patched in Curl</a> appeared first on <a href=\"https://www.securityweek.com\">SecurityWeek</a>.</p>",
+    "feed_url": "https://www.securityweek.com/feed/",
+    "categories": [
+      "Vulnerability"
+    ],
+    "relevance_score": 3,
+    "relevance_reasons": [
+      "Vulnerability category"
+    ],
+    "cves": [],
+    "kev": false,
+    "kev_matches": []
+  },
+  {
     "title": "NIST Opens Updated IoT Security Guidance to Public Review",
     "link": "https://www.securityweek.com/nist-opens-updated-iot-security-guidance-to-public-review/",
     "published": "2026-06-25T08:29:26+00:00",
@@ -10,7 +85,10 @@
       "Uncategorized"
     ],
     "relevance_score": 0,
-    "relevance_reasons": []
+    "relevance_reasons": [],
+    "cves": [],
+    "kev": false,
+    "kev_matches": []
   },
   {
     "title": "Chrome 149 Update Resolves 18 Severe Vulnerabilities",
@@ -26,7 +104,10 @@
     "relevance_reasons": [
       "Vulnerability category",
       "Remote code execution mentioned"
-    ]
+    ],
+    "cves": [],
+    "kev": false,
+    "kev_matches": []
   },
   {
     "title": "Cisco SD-WAN Zero-Day Exploited Months Before Patching",
@@ -44,6 +125,27 @@
       "Zero-day mentioned",
       "CVE mentioned",
       "Exploit mentioned"
+    ],
+    "cves": [
+      "CVE-2026-20245"
+    ],
+    "kev": true,
+    "kev_matches": [
+      {
+        "cveID": "CVE-2026-20245",
+        "vendorProject": "Cisco",
+        "product": "Catalyst SD-WAN Manager",
+        "vulnerabilityName": "Cisco Catalyst SD-WAN Manager Improper Encoding or Escaping of Output Vulnerability",
+        "dateAdded": "2026-06-09",
+        "shortDescription": "Cisco Catalyst SD-WAN Manager formerly SD-WAN vManage contains an improper encoding or escaping of output vulnerability. This vulnerability could allow an authenticated, local attacker to execute arbitrary commands as root by supplying a crafted file to the affected system.",
+        "requiredAction": "Apply mitigations per vendor instructions, follow applicable BOD 22-01 guidance for cloud services, or discontinue use of the product if mitigations are unavailable.",
+        "dueDate": "2026-06-23",
+        "knownRansomwareCampaignUse": "Unknown",
+        "notes": "https://sec.cloudapps.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-sdwan-privesc-4uxFrdzx ; https://nvd.nist.gov/vuln/detail/CVE-2026-20245",
+        "cwes": [
+          "CWE-116"
+        ]
+      }
     ]
   },
   {
@@ -57,7 +159,10 @@
       "Uncategorized"
     ],
     "relevance_score": 0,
-    "relevance_reasons": []
+    "relevance_reasons": [],
+    "cves": [],
+    "kev": false,
+    "kev_matches": []
   },
   {
     "title": "DraftKings hacker 'Snoopy' sentenced to 18 months in prison",
@@ -70,7 +175,10 @@
       "Uncategorized"
     ],
     "relevance_score": 0,
-    "relevance_reasons": []
+    "relevance_reasons": [],
+    "cves": [],
+    "kev": false,
+    "kev_matches": []
   },
   {
     "title": "Mandiant reveals how Cisco SD-WAN zero-day attacks gained root access",
@@ -88,6 +196,27 @@
       "Zero-day mentioned",
       "CVE mentioned",
       "Exploit mentioned"
+    ],
+    "cves": [
+      "CVE-2026-20245"
+    ],
+    "kev": true,
+    "kev_matches": [
+      {
+        "cveID": "CVE-2026-20245",
+        "vendorProject": "Cisco",
+        "product": "Catalyst SD-WAN Manager",
+        "vulnerabilityName": "Cisco Catalyst SD-WAN Manager Improper Encoding or Escaping of Output Vulnerability",
+        "dateAdded": "2026-06-09",
+        "shortDescription": "Cisco Catalyst SD-WAN Manager formerly SD-WAN vManage contains an improper encoding or escaping of output vulnerability. This vulnerability could allow an authenticated, local attacker to execute arbitrary commands as root by supplying a crafted file to the affected system.",
+        "requiredAction": "Apply mitigations per vendor instructions, follow applicable BOD 22-01 guidance for cloud services, or discontinue use of the product if mitigations are unavailable.",
+        "dueDate": "2026-06-23",
+        "knownRansomwareCampaignUse": "Unknown",
+        "notes": "https://sec.cloudapps.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-sdwan-privesc-4uxFrdzx ; https://nvd.nist.gov/vuln/detail/CVE-2026-20245",
+        "cwes": [
+          "CWE-116"
+        ]
+      }
     ]
   },
   {
@@ -106,7 +235,10 @@
       "Ransomware category",
       "Malware category",
       "Ransomware mentioned"
-    ]
+    ],
+    "cves": [],
+    "kev": false,
+    "kev_matches": []
   },
   {
     "title": "When Information Becomes the Attack Surface – Understanding AI Agent Traps",
@@ -121,7 +253,10 @@
     "relevance_score": 3,
     "relevance_reasons": [
       "Vulnerability category"
-    ]
+    ],
+    "cves": [],
+    "kev": false,
+    "kev_matches": []
   },
   {
     "title": "Microsoft and Allies Smash Shared Infrastructure of Amadey and StealC Malware",
@@ -138,7 +273,10 @@
     "relevance_reasons": [
       "Vulnerability category",
       "Malware category"
-    ]
+    ],
+    "cves": [],
+    "kev": false,
+    "kev_matches": []
   },
   {
     "title": "CISA warns of max severity Ubiquiti flaws exploited in attacks",
@@ -154,7 +292,10 @@
     "relevance_reasons": [
       "Vulnerability category",
       "Exploit mentioned"
-    ]
+    ],
+    "cves": [],
+    "kev": false,
+    "kev_matches": []
   },
   {
     "title": "Amadey, StealC malware operations disrupted in Operation Endgame action",
@@ -172,7 +313,10 @@
       "Ransomware category",
       "Malware category",
       "Ransomware mentioned"
-    ]
+    ],
+    "cves": [],
+    "kev": false,
+    "kev_matches": []
   },
   {
     "title": "Exclusive: Meet AIVEX, a New Triage Model Built to Reduce Supply Chain Threat and Risk",
@@ -185,7 +329,10 @@
       "Uncategorized"
     ],
     "relevance_score": 0,
-    "relevance_reasons": []
+    "relevance_reasons": [],
+    "cves": [],
+    "kev": false,
+    "kev_matches": []
   },
   {
     "title": "Securing the service desk: Why social engineering attacks keep succeeding",
@@ -198,7 +345,10 @@
       "Uncategorized"
     ],
     "relevance_score": 0,
-    "relevance_reasons": []
+    "relevance_reasons": [],
+    "cves": [],
+    "kev": false,
+    "kev_matches": []
   },
   {
     "title": "macOS Weaknesses Chained to Silently Disable Endpoint Security Agents",
@@ -214,48 +364,10 @@
     "relevance_reasons": [
       "Vulnerability category",
       "Exploit mentioned"
-    ]
-  },
-  {
-    "title": "Third DraftKings Hacker Sentenced to 18 Months in Prison",
-    "link": "https://www.securityweek.com/third-draftkings-hacker-sentenced-to-18-months-in-prison/",
-    "published": "2026-06-24T12:52:40+00:00",
-    "source": "SecurityWeek",
-    "summary": "<p>Nathan Austad has been ordered to pay roughly $1.8 million in forfeiture and restitution, and the sentence also includes 3 years of supervised release. </p>\n<p>The post <a href=\"https://www.securityweek.com/third-draftkings-hacker-sentenced-to-18-months-in-prison/\">Third DraftKings Hacker Sentenced to 18 Months in Prison</a> appeared first on <a href=\"https://www.securityweek.com\">SecurityWeek</a>.</p>",
-    "feed_url": "https://www.securityweek.com/feed/",
-    "categories": [
-      "Uncategorized"
     ],
-    "relevance_score": 0,
-    "relevance_reasons": []
-  },
-  {
-    "title": "Critical Ubiquiti Vulnerabilities in Attackers’ Crosshairs",
-    "link": "https://www.securityweek.com/critical-ubiquiti-vulnerabilities-in-attackers-crosshairs/",
-    "published": "2026-06-24T12:32:17+00:00",
-    "source": "SecurityWeek",
-    "summary": "<p>The flaws allow remote, unauthenticated attackers to make system changes, access underlying accounts, and inject commands.</p>\n<p>The post <a href=\"https://www.securityweek.com/critical-ubiquiti-vulnerabilities-in-attackers-crosshairs/\">Critical Ubiquiti Vulnerabilities in Attackers&#8217; Crosshairs</a> appeared first on <a href=\"https://www.securityweek.com\">SecurityWeek</a>.</p>",
-    "feed_url": "https://www.securityweek.com/feed/",
-    "categories": [
-      "Uncategorized"
-    ],
-    "relevance_score": 2,
-    "relevance_reasons": [
-      "Critical mentioned"
-    ]
-  },
-  {
-    "title": "Agentic AI Security: Wrong Context, Wrong Decisions at Machine Speed",
-    "link": "https://www.securityweek.com/agentic-ai-security-wrong-context-wrong-decisions-at-machine-speed/",
-    "published": "2026-06-24T12:00:00+00:00",
-    "source": "SecurityWeek",
-    "summary": "<p>Context is the central plank of AI in general, and agentic AI in particular. If an AI system doesn’t have the correct context, it cannot make the correct decisions.</p>\n<p>The post <a href=\"https://www.securityweek.com/agentic-ai-security-wrong-context-wrong-decisions-at-machine-speed/\">Agentic AI Security: Wrong Context, Wrong Decisions at Machine Speed</a> appeared first on <a href=\"https://www.securityweek.com\">SecurityWeek</a>.</p>",
-    "feed_url": "https://www.securityweek.com/feed/",
-    "categories": [
-      "Uncategorized"
-    ],
-    "relevance_score": 0,
-    "relevance_reasons": []
+    "cves": [],
+    "kev": false,
+    "kev_matches": []
   },
   {
     "title": "Stealthy Mistic backdoor linked to ransomware access broker KongTuke",
@@ -273,7 +385,10 @@
       "Ransomware category",
       "Malware category",
       "Ransomware mentioned"
-    ]
+    ],
+    "cves": [],
+    "kev": false,
+    "kev_matches": []
   },
   {
     "title": "Cisco Unified CM flaw CVE-2026-20230 now exploited in attacks",
@@ -290,7 +405,12 @@
       "Vulnerability category",
       "CVE mentioned",
       "Exploit mentioned"
-    ]
+    ],
+    "cves": [
+      "CVE-2026-20230"
+    ],
+    "kev": false,
+    "kev_matches": []
   },
   {
     "title": "Tata Electronics confirms cyberattack as hackers leak data",
@@ -305,7 +425,10 @@
     "relevance_score": 3,
     "relevance_reasons": [
       "Data Breach category"
-    ]
+    ],
+    "cves": [],
+    "kev": false,
+    "kev_matches": []
   },
   {
     "title": "Windows 11 KB5095093 update rolls out new Point-in-Time restore feature",
@@ -318,7 +441,10 @@
       "Uncategorized"
     ],
     "relevance_score": 0,
-    "relevance_reasons": []
+    "relevance_reasons": [],
+    "cves": [],
+    "kev": false,
+    "kev_matches": []
   },
   {
     "title": "Healthtech firm Xolis suffers data breach impacting 1.4 million people",
@@ -335,7 +461,10 @@
     "relevance_reasons": [
       "Phishing category",
       "Data Breach category"
-    ]
+    ],
+    "cves": [],
+    "kev": false,
+    "kev_matches": []
   },
   {
     "title": "New macOS ClickFix attack silently mounts DMGs to push infostealer",
@@ -350,7 +479,10 @@
     "relevance_score": 3,
     "relevance_reasons": [
       "Malware category"
-    ]
+    ],
+    "cves": [],
+    "kev": false,
+    "kev_matches": []
   },
   {
     "title": "Scattered Spider members plead guilty to hacking Transport for London",
@@ -363,7 +495,10 @@
       "Uncategorized"
     ],
     "relevance_score": 0,
-    "relevance_reasons": []
+    "relevance_reasons": [],
+    "cves": [],
+    "kev": false,
+    "kev_matches": []
   },
   {
     "title": "The Exploit Doesn't Exist. You Can Still Prove It Works Against You",
@@ -379,7 +514,10 @@
     "relevance_reasons": [
       "Vulnerability category",
       "Exploit mentioned"
-    ]
+    ],
+    "cves": [],
+    "kev": false,
+    "kev_matches": []
   },
   {
     "title": "FortiBleed-kyberhyökkäyskampanjan vaikutukset näkyvät myös Suomessa",
@@ -392,7 +530,10 @@
       "Uncategorized"
     ],
     "relevance_score": 0,
-    "relevance_reasons": []
+    "relevance_reasons": [],
+    "cves": [],
+    "kev": false,
+    "kev_matches": []
   },
   {
     "title": "Kyberturvallisuuskeskuksen viikkokatsaus - 24/2026",
@@ -405,7 +546,10 @@
       "Uncategorized"
     ],
     "relevance_score": 0,
-    "relevance_reasons": []
+    "relevance_reasons": [],
+    "cves": [],
+    "kev": false,
+    "kev_matches": []
   },
   {
     "title": "Toukokuun Kybersää 2026",
@@ -418,7 +562,10 @@
       "Uncategorized"
     ],
     "relevance_score": 0,
-    "relevance_reasons": []
+    "relevance_reasons": [],
+    "cves": [],
+    "kev": false,
+    "kev_matches": []
   },
   {
     "title": "Check Point VPN -tuotteissa aktiivisesti hyväksikäytetty haavoittuvuus",
@@ -434,6 +581,27 @@
     "relevance_reasons": [
       "Vulnerability category",
       "CVE mentioned"
+    ],
+    "cves": [
+      "CVE-2026-50751"
+    ],
+    "kev": true,
+    "kev_matches": [
+      {
+        "cveID": "CVE-2026-50751",
+        "vendorProject": "Check Point",
+        "product": "Security Gateway",
+        "vulnerabilityName": "Check Point Security Gateway Improper Authentication Vulnerability",
+        "dateAdded": "2026-06-08",
+        "shortDescription": "Check Point Security Gateway contains an improper authentication vulnerability in IKEv1 key exchange that could allow an unauthenticated remote attacker to bypass user authentication and establish a remote access VPN connection without a valid user password.",
+        "requiredAction": "Apply mitigations per vendor instructions, follow applicable BOD 22-01 guidance for cloud services, or discontinue use of the product if mitigations are unavailable.",
+        "dueDate": "2026-06-11",
+        "knownRansomwareCampaignUse": "Known",
+        "notes": "https://blog.checkpoint.com/security/check-point-releases-important-hotfix-for-vulnerabilities-in-deprecated-ikev1-vpn-protocol/ ; https://support.checkpoint.com/results/sk/sk185033?_gl=1*1wqeqhc*_gcl_au*MTI1MzE5MjI2LjE3ODA5MzQ1NTM. ; https://nvd.nist.gov/vuln/detail/CVE-2026-50751",
+        "cwes": [
+          "CWE-287"
+        ]
+      }
     ]
   },
   {
@@ -447,7 +615,10 @@
       "Uncategorized"
     ],
     "relevance_score": 0,
-    "relevance_reasons": []
+    "relevance_reasons": [],
+    "cves": [],
+    "kev": false,
+    "kev_matches": []
   },
   {
     "title": "Kyberturvallisuuskeskuksen viikkokatsaus - 22/2026",
@@ -460,6 +631,9 @@
       "Uncategorized"
     ],
     "relevance_score": 0,
-    "relevance_reasons": []
+    "relevance_reasons": [],
+    "cves": [],
+    "kev": false,
+    "kev_matches": []
   }
 ]

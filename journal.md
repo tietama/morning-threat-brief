@@ -149,3 +149,28 @@ Result:
 - Morning Threat Brief now prioritizes collected intelligence using deterministic and explainable relevance scoring
 - Reports now highlight the most important articles alongside the latest articles
 - Foundation prepared for future CISA KEV enrichment and AI-assisted summarization
+
+## 2026-06-25
+
+Updated project to v0.7
+
+Changes:
+
+- Added CISA Known Exploited Vulnerabilities (KEV) integration
+- Implemented live retrieval of the CISA KEV catalog
+- Added local storage of the downloaded catalog for debugging and audit
+- Added automatic CVE extraction from article titles and summaries
+- Correlated extracted CVEs against the CISA KEV catalog
+- Enriched article data with:
+	- Extracted CVEs
+	- KEV match status
+	- Matched KEV entries
+- Updated the pipeline to perform KEV enrichment before report generation
+- Added a Known Exploited Vulnerabilities summary section to the report
+- Added KEV status and matched CVEs to individual article entries
+- Prioritized KEV summary articles by relevance score while preserving stable ordering for ties
+
+Result:
+
+- Morning Threat Brief now correlates collected cybersecurity news with the CISA Known Exploited Vulnerabilities catalog.
+- The generated report highlights actively exploited vulnerabilities alongside deterministic relevance scoring, prociding more actionable threat intelligence for analyst review.

@@ -11,6 +11,12 @@ from rss_collector import (
 )
 from report_generator import load_articles, generate_report
 
+from kev_lookup import (
+    load_kev_catalog,
+    build_kev_lookup,
+    extract_articles_cves,
+    enrich_articles_with_kev,
+)
 from relevance_scorer import score_articles
 from threat_classifier import classify_articles
 
@@ -32,6 +38,10 @@ def run_pipeline() -> None:
         articles = sort_articles(articles)
         articles = classify_articles(articles)
         articles = score_articles(articles)
+        kev_catalog = load_kev_catalog()
+        kev_lookup = build_kev_lookup(kev_catalog)
+        articles = extract_articles_cves(articles)
+        articles = enrich_articles_with_kev(articles, kev_lookup)
         save_articles(articles)
         print_feed_stats(stats)
 
